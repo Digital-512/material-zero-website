@@ -1,0 +1,22 @@
+{
+    "name": "Material-Zero CSS Framework",
+    "short_name": "Material-Zero",
+    "description": "A modern responsive front-end framework based on Material Design.",
+    "theme_color": "#212121",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/assets/icons/app-icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icons/app-icon-maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+footer {
+    padding: 40px 0;
+
+    .mz-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            width: 50px;
+        }
+
+        .name {
+            color: rgba(255, 255, 255, 0.8);
+            margin-left: 24px;
+        }
+    }
+}

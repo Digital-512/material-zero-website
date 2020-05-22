@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="<%= config.var.description %>">
+    <meta name="keywords" content="<%= config.var.keywords %>">
+
+    <meta name="application-name" content="<%= config.var.appName %>">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#212121">
+    <link rel="apple-touch-icon" href="/assets/icons/app-icon-apple.png">
+    <link rel="manifest" href="/assets/manifest.json">
+    <link rel="icon" href="/assets/icons/favicon.ico">
+
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+
+    <!-- Include fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Include Material-Zero -->
+    <link rel="stylesheet" href="/assets/material/css/material-zero.min.css">
+
+    <link rel="stylesheet" href="/assets/styles/global.css">
+
+    <!-- Include module head -->
+    <%- include('modules/' + module + '/head', { config: config }); %>
+</head>
+
+<body id="particles-js">
+    <div class="mz-layout mz-layout--header-fixed mz-layout--desktop-drawer-button">
+        <div class="mz-layout-drawer mz-shadow">
+            <span class="mz-layout-title mz-colors--midnight-black mz-colors-text--white"><%= config.var.appName %></span>
+            <hr class="mz-divider-horizontal mz-no-border">
+            <nav class="mz-navigation">
+                <a class="mz-navigation-link is-active" href="/"><span class="material-icons">home</span>Homepage</a>
+                <a class="mz-navigation-link" href=""><span class="material-icons">explore</span>Get started</a>
+                <a class="mz-navigation-link" href=""><span class="material-icons">get_app</span>Download</a>
+                <a class="mz-navigation-link" href="<%= config.links.repository %>">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1.5 -1.5 19 19" width="24" height="24" fill="rgba(0,0,0,.6)" style="margin-right: 24px;">
+                        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                    GitHub
+                </a>
+                <a class="mz-navigation-link" href=""><span class="material-icons">widgets</span>Components</a>
+                <a class="mz-navigation-link" href=""><span class="material-icons">layers</span>Templates</a>
+                <hr class="mz-divider-horizontal">
+                <a class="mz-navigation-link" href="<%= config.links.repository %>/releases"><span class="material-icons">new_releases</span>Releases</a>
+                <a class="mz-navigation-link" href="<%= config.links.repository %>/issues"><span class="material-icons">warning</span>Issues</a>
+                <a class="mz-navigation-link" href=""><span class="material-icons">announcement</span>Help & feedback</a>
+            </nav>
+        </div>
+        <div class="mz-layout-content">
+            <header class="mz-layout-header mz-colors--midnight-black mz-colors-text--white">
+                <div class="mz-layout-header-row">
+                    <span class="mz-layout-drawer-button material-icons">menu</span>
+                    <span class="mz-layout-title"><%= config.var.appName %></span>
+                    <div class="mz-layout-spacer"></div>
+                    <nav class="mz-navigation">
+                        <div class="extended-menu mz-screen-large">
+                            <a class="mz-navigation-link" href="">Documentation</a>
+                            <a class="mz-navigation-link" href="">Templates</a>
+                        </div>
+                        <a class="mz-navigation-link" href="<%= config.links.repository %>">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="21" height="21" fill="white">
+                                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                        </a>
+                        <a class="mz-navigation-link mz-colors--blue" href="">Download</a>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <!-- Include module body -->
+                <%- include('modules/' + module + '/module', { config: config }); %>
+            </main>
+            <footer>
+                <div class="mz-container">
+                    <img src="/assets/icons/logo.svg" alt="Logo">
+                    <div class="name"><%= config.var.appName %> / Released under the MIT license.</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="/assets/material/js/material-zero.min.js"></script>
+</body>
+
+</html>

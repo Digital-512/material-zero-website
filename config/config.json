@@ -1,0 +1,13 @@
+{
+    "general": {
+        "port": 80
+    },
+    "var": {
+        "appName": "Material-Zero",
+        "description": "A modern responsive front-end framework based on Material Design.",
+        "keywords": "material, css, framework, docs, documentation, free, open source, front-end, design, responsive, modern"
+    },
+    "links": {
+        "repository": "https://github.com/Digital-512/material-zero"
+    }
+}

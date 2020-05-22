@@ -1,0 +1,36 @@
+{
+  "name": "material-zero-website",
+  "version": "1.0.0",
+  "description": "A website for Material-Zero CSS Framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digital-512/material-zero.git"
+  },
+  "keywords": [
+    "material",
+    "design",
+    "website",
+    "css",
+    "framework",
+    "documentation"
+  ],
+  "author": "Digital-512",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Digital-512/material-zero/issues"
+  },
+  "homepage": "https://github.com/Digital-512/material-zero#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0"
+  },
+  "devDependencies": {
+    "sass": "^1.26.5"
+  }
+}
